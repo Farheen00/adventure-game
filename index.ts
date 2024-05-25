@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer"
 
 let play=true;
@@ -101,9 +102,10 @@ let again= await inquirer.prompt(
             name:"playAgain",
             type:"confirm",
             message:"Would you like to play again?",
-            default:"false"
+            default:"true"
         }
     ]
 );
  play = again.playAgain
 }
+console.log("\n \t THANKYOU FOR PLAYING FIFI ADVENTURE GAME. \t \n  ")
